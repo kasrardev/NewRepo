@@ -108,7 +108,6 @@
     <Compile Include="Pages\Routes.xaml.cs">
       <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Class.cs" />
     <Compile Include="Windows\Win_Login.xaml.cs">
       <DependentUpon>Win_Login.xaml</DependentUpon>
     </Compile>
