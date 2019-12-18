@@ -37,7 +37,7 @@
         <Label Content="National ID :" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="NIdtxt" MaxLength="10" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
         <Label Content="Birth Date :" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <DatePicker x:Name="birth" Grid.Row="4" Grid.Column="1" Margin="10"/>
         <Label Content="Phone Number :" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="phonetxt" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
         <Label Content="Address :" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
@@ -49,19 +49,19 @@
         <Label Content="Licence NO :" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="licNotxt" MaxLength="7" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
         <Label Content="Expire Date :" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <DatePicker x:Name="licEX" Grid.Row="3" Grid.Column="3" Margin="10"/>
         <Label Content="Type Name :" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <ComboBox x:Name="type" Grid.Row="4" Grid.Column="3" Margin="10"/>
         <Label Content="Type Expire Date :" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <DatePicker x:Name="TypeEx" Grid.Row="5" Grid.Column="3" Margin="10"/>
         <Label Content="Medical Serial :" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="medSertxt" Grid.Row="6" Grid.Column="3" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
         <Label Content="Medical Expire Date :" Grid.Row="7" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <DatePicker x:Name="MedEX" Grid.Row="7" Grid.Column="3" Margin="10"/>
         <Label Content="Medical Limitation :" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="MedLimtxt" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
         <Label Content="Medical Class :" Grid.Row="2" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
-        
+        <ComboBox x:Name="medicalClass" Grid.Row="2" Grid.Column="5" Margin="10"/>
         <Label Content="Medical Doctor :" Grid.Row="3" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="Black"/>
         <TextBox x:Name="medDRtxt" Grid.Row="3" Grid.Column="5" VerticalAlignment="Center"  Foreground="Black" Margin="10"/>
     </Grid>
