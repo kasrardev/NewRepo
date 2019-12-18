@@ -17,12 +17,12 @@ using DB_Test.Windows;
 namespace DB_Test.Pages
 {
     /// <summary>
-    /// Interaction logic for AddPilot.xaml
+    /// Interaction logic for AddDispatch.xaml
     /// </summary>
-    public partial class AddPilot : Page
+    public partial class AddDispatch : Page
     {
         Win_OCC w;
-        public AddPilot(Win_OCC win)
+        public AddDispatch(Win_OCC win)
         {
             InitializeComponent();
             w = win;
@@ -30,7 +30,7 @@ namespace DB_Test.Pages
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            pilotPage a = new pilotPage(w);
+            Dispath a = new Dispath(w);
             w.frame.Navigate(a);
         }
 

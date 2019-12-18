@@ -17,12 +17,12 @@ using DB_Test.Windows;
 namespace DB_Test.Pages
 {
     /// <summary>
-    /// Interaction logic for AddPilot.xaml
+    /// Interaction logic for AddFlightAttendent.xaml
     /// </summary>
-    public partial class AddPilot : Page
+    public partial class AddFlightAttendent : Page
     {
         Win_OCC w;
-        public AddPilot(Win_OCC win)
+        public AddFlightAttendent(Win_OCC win)
         {
             InitializeComponent();
             w = win;
@@ -30,7 +30,7 @@ namespace DB_Test.Pages
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            pilotPage a = new pilotPage(w);
+            FlightAttendent a = new FlightAttendent(w);
             w.frame.Navigate(a);
         }
 

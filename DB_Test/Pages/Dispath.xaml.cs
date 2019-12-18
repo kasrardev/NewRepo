@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DB_Test.Windows;
 
 namespace DB_Test.Pages
 {
@@ -20,14 +21,17 @@ namespace DB_Test.Pages
     /// </summary>
     public partial class Dispath : Page
     {
-        public Dispath()
+        Win_OCC w;
+        public Dispath(Win_OCC win)
         {
             InitializeComponent();
+            w = win;
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            AddDispatch a = new AddDispatch(w);
+            w.frame.Navigate(a);
         }
 
         private void Dispatchs_MouseDoubleClick(object sender, MouseButtonEventArgs e)

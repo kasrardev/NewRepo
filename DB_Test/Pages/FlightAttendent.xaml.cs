@@ -29,7 +29,8 @@ namespace DB_Test.Pages
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            
+            AddFlightAttendent a = new AddFlightAttendent(win);
+            win.frame.Navigate(a);
         }
 
         private void Flights_MouseDoubleClick(object sender, MouseButtonEventArgs e)

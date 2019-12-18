@@ -125,7 +125,7 @@ namespace DB_Test.Windows
 
         private void Dispatch_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Dispath a = new Dispath();
+            Dispath a = new Dispath(this);
             frame.Navigate(a);
         }
 
