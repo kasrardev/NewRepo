@@ -9,7 +9,6 @@ namespace DB_Test.Domain
     public class Pilot : Person
     {
         public string TotFlightTime;
-        public string Limitation;
         public string LicNO;
         public string ExDate;
         public string TypeName;

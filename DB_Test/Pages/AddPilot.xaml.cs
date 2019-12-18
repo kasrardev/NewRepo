@@ -17,27 +17,25 @@ using DB_Test.Windows;
 namespace DB_Test.Pages
 {
     /// <summary>
-    /// Interaction logic for pilotPage.xaml
+    /// Interaction logic for AddPilot.xaml
     /// </summary>
-    public partial class pilotPage : Page
+    public partial class AddPilot : Page
     {
-        Win_OCC win;
-        public pilotPage(Win_OCC w)
+        Win_OCC w;
+        public AddPilot(Win_OCC win)
         {
             InitializeComponent();
-            win = w;
+            w = win;
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            AddPilot a = new AddPilot(win);
-            win.frame.Navigate(a);
-        }
 
-        private void Pilots_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            PilotDetails a = new PilotDetails(win);
-            win.frame.Navigate(a);
         }
-    } 
+    }
 }

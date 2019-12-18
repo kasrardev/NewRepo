@@ -81,6 +81,9 @@
     <Compile Include="Domain\Pilot.cs" />
     <Compile Include="Domain\Report.cs" />
     <Compile Include="Domain\Route.cs" />
+    <Compile Include="Pages\AddPilot.xaml.cs">
+      <DependentUpon>AddPilot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Dispath.xaml.cs">
       <DependentUpon>Dispath.xaml</DependentUpon>
     </Compile>
@@ -143,6 +146,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\AddPilot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Dispath.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
