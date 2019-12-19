@@ -12,39 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DB_Test.Windows;
 
 namespace DB_Test.Pages
 {
     /// <summary>
-    /// Interaction logic for PilotDetails.xaml
+    /// Interaction logic for DispatchDetail.xaml
     /// </summary>
-    public partial class PilotDetails : Page
+    public partial class DispatchDetail : Page
     {
-        Win_OCC win;
-        public PilotDetails(Win_OCC w)
+        public DispatchDetail()
         {
             InitializeComponent();
-            win = w;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            pilotPage a = new pilotPage(win);
-            win.frame.Navigate(a);
-        }
-
-        private void Log_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Type_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Medical_Click(object sender, RoutedEventArgs e)
         {
 
         }

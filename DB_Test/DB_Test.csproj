@@ -96,6 +96,9 @@
     <Compile Include="Pages\Airplanes.xaml.cs">
       <DependentUpon>Airplanes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DispatchDetail.xaml.cs">
+      <DependentUpon>DispatchDetail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Dispath.xaml.cs">
       <DependentUpon>Dispath.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,9 @@
     </Compile>
     <Compile Include="Pages\FlightAttendent.xaml.cs">
       <DependentUpon>FlightAttendent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FlightAttendentDetail.xaml.cs">
+      <DependentUpon>FlightAttendentDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\flightLog.xaml.cs">
       <DependentUpon>flightLog.xaml</DependentUpon>
@@ -178,6 +184,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DispatchDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Dispath.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,6 +197,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\FlightAttendent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FlightAttendentDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
