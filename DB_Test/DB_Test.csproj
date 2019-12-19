@@ -81,6 +81,9 @@
     <Compile Include="Domain\Pilot.cs" />
     <Compile Include="Domain\Report.cs" />
     <Compile Include="Domain\Route.cs" />
+    <Compile Include="Pages\AddAirplane.xaml.cs">
+      <DependentUpon>AddAirplane.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AddDispatch.xaml.cs">
       <DependentUpon>AddDispatch.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,9 @@
     </Compile>
     <Compile Include="Pages\AddPilot.xaml.cs">
       <DependentUpon>AddPilot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Airplanes.xaml.cs">
+      <DependentUpon>Airplanes.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Dispath.xaml.cs">
       <DependentUpon>Dispath.xaml</DependentUpon>
@@ -152,6 +158,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Pages\AddAirplane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AddDispatch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,6 +171,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\AddPilot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Airplanes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

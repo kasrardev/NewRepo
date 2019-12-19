@@ -137,7 +137,8 @@ namespace DB_Test.Windows
 
         private void Airplane_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Airplanes a = new Airplanes(this);
+            frame.Navigate(a);
         }
     }
 }
