@@ -10,7 +10,7 @@ namespace DB_Test.Domain
     {
         public string LicNo;
         public string ExDate;
-        public Dispatcher(string firstName, string lastName, string iD, string nID, string birthDate,string licNo) : base(firstName, lastName, iD, nID, birthDate)
+        public Dispatcher(string firstName, string lastName, string iD, string nID, DateTime birthDate,string licNo) : base(firstName, lastName, iD, nID, birthDate)
         {
             LicNo = licNo;
         }

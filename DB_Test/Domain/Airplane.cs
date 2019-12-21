@@ -15,10 +15,10 @@ namespace DB_Test.Domain
         public int Chair1stNO;
         public int ChairBusNO;
         public int ChairEcoNO;
-        public string TotFlightTime;
-        public string TotBlockTime;
+        public int TotFlightTime;
+        public int TotBlockTime;
 
-        public AirPlane(string name, string regCo, string eNG, string equipment, int chair1stNO, int chairBusNO, int chairEcoNO, string totFlightTime, string totBlockTime)
+        public AirPlane(string name, string regCo, string eNG, string equipment, int chair1stNO, int chairBusNO, int chairEcoNO, int totFlightTime, int totBlockTime)
         {
             Name = name;
             RegCo = regCo;

@@ -12,11 +12,11 @@ namespace DB_Test.Domain
         private string lastName;
         private string iD;
         private string nID;
-        private string birthDate;
+        private DateTime birthDate;
         private string phoneNumber;
         private string address;
 
-        public Person(string firstName, string lastName, string iD, string nID, string birthDate)
+        public Person(string firstName, string lastName, string iD, string nID, DateTime birthDate)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -29,7 +29,7 @@ namespace DB_Test.Domain
         public string LastName { get => lastName; set => lastName = value; }
         public string ID { get => iD; set => iD = value; }
         public string NID { get => nID; set => nID = value; }
-        public string BirthDate { get => birthDate; set => birthDate = value; }
+        public DateTime BirthDate { get => birthDate; set => birthDate = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Address { get => address; set => address = value; }
 

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DB_Test.Windows;
+using DB_Test.Domain;
 
 namespace DB_Test.Pages
 {
@@ -36,7 +37,7 @@ namespace DB_Test.Pages
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            w.SaveAirplane(new AirPlane(nametxt.Text, regtxt.Text, Engtxt.Text, equtxt.Text, Convert.ToInt32(FCStxt.Text), Convert.ToInt32(BCStxt.Text), Convert.ToInt32(ECStxt.Text), 0, 0));
         }
     }
 }

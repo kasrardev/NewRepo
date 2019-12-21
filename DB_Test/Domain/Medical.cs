@@ -10,11 +10,11 @@ namespace DB_Test.Domain
     {
         public string MedicNo;
         public string Limitation;
-        public string ExDate;
+        public DateTime ExDate;
         public string Class;
         public string DR;
 
-        public Medical(string medicNo, string limitation, string exDate, string @class, string dR)
+        public Medical(string medicNo, string limitation, DateTime exDate, string @class, string dR)
         {
             MedicNo = medicNo;
             Limitation = limitation;

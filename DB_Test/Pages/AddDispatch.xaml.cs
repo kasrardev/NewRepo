@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DB_Test.Windows;
+using DB_Test.Domain;
 
 namespace DB_Test.Pages
 {
@@ -36,7 +37,10 @@ namespace DB_Test.Pages
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            string[] a = new string[3];
+            a = birth.Text.Split('-');
+            DateTime birthday = new DateTime(Convert.ToInt32(a[0]), Convert.ToInt32(a[1]), Convert.ToInt32(a[2]));
+            w.SaveDispatch(new Dispatcher(fnametxt.Text, lnametxt.Text, idtxt.Text, NIdtxt.Text, birthday, licNotxt.Text));
         }
     }
 }

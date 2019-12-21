@@ -36,7 +36,8 @@ namespace DB_Test.Pages
 
         private void Dispatchs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-
+            DispatchDetail a = new DispatchDetail(w);
+            w.frame.Navigate(a);
         }
     }
 }

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DB_Test.Pages;
 using DB_Test.Windows;
+using DB_Test.Domain;
 namespace DB_Test.Windows
 {
     /// <summary>
@@ -113,7 +114,7 @@ namespace DB_Test.Windows
 
         private void FlightAttendent_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            FlightAttendent a = new FlightAttendent(this);
+            Pages.FlightAttendent a = new Pages.FlightAttendent(this);
             frame.Navigate(a);
         }
 
@@ -139,6 +140,34 @@ namespace DB_Test.Windows
         {
             Airplanes a = new Airplanes(this);
             frame.Navigate(a);
+        }
+
+        //=========================================================================
+        //=========================================================================
+
+        public void SavePilot(Pilot a)
+        {
+
+        }
+        public void SaveAirplane(AirPlane a)
+        {
+
+        }
+        public void SaveDispatch(Dispatcher a)
+        {
+
+        }
+        public void SaveFA(Flight_Attendent a)
+        {
+
+        }
+        public void SaveRoute(Route a)
+        {
+
+        }
+        public void SaveFlight(Flight a)
+        {
+
         }
     }
 }

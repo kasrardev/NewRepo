@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DB_Test.Windows;
 
 namespace DB_Test.Pages
 {
@@ -20,14 +21,17 @@ namespace DB_Test.Pages
     /// </summary>
     public partial class DispatchDetail : Page
     {
-        public DispatchDetail()
+        Win_OCC w;
+        public DispatchDetail(Win_OCC win)
         {
             InitializeComponent();
+            w = win;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-
+            Dispath a = new Dispath(w);
+            w.frame.Navigate(a);
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)

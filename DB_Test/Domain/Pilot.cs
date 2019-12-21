@@ -10,11 +10,11 @@ namespace DB_Test.Domain
     {
         public string TotFlightTime;
         public string LicNO;
-        public string ExDate;
+        public DateTime ExDate;
         public string TypeName;
-        public string TypeExdate;
+        public DateTime TypeExdate;
         public Medical Medical;
-        public Pilot(string firstName, string lastName, string iD, string nID, string birthDate,Medical medical) : base(firstName, lastName, iD, nID, birthDate)
+        public Pilot(string firstName, string lastName, string iD, string nID, DateTime birthDate,Medical medical) : base(firstName, lastName, iD, nID, birthDate)
         {
             Medical = medical;
         }
