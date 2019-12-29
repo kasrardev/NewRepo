@@ -129,6 +129,9 @@
     <Compile Include="Pages\Routes.xaml.cs">
       <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Win_Dispatcher.xaml.cs">
+      <DependentUpon>Win_Dispatcher.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Win_Login.xaml.cs">
       <DependentUpon>Win_Login.xaml</DependentUpon>
     </Compile>
@@ -225,6 +228,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Routes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Win_Dispatcher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
